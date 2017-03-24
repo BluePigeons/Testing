@@ -1,0 +1,45 @@
+#body:hover{
+  transition: background 30s;
+}
+title{
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  color: blue;
+}
+#hello{
+  color:white;
+  font-size: 20px;
+}
+#wat_wat{
+  height: 100px;
+  width: 200px;
+  font-size: 40px;
+  background-color: #99b7e8;
+  border:none;
+  border-radius: 90px;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  cursor: pointer;
+  outline:none;
+  transition: 2s;
+}
+#wat_wat:hover{
+  background:url("watFace.jpg");
+  color: white;
+}
+#wat_wat:hover #body:{
+  background: blue
+}
+#wrapper{
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 200px;
+  height: 100px;
+}
+#wat2{
+  display: block;
+  margin: 0 auto;
+  margin-top: 8px;
+}
