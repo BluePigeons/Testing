@@ -15,11 +15,13 @@ Car.prototype.write = function(x){
 Car.prototype.look_up = function() {
   //checking to see if the .doors is correct
   if (isNaN(this.doors)&&this.doors<4){
-    return "That is not an available type";
+    console.log("That is not an available type");
+    return this
   };
   //checking to see if the .colour is correct
   if (this.available_colours.indexOf(this.colour) >= 0){
-    return "That is not an available type";
+    console.log("That is not an available type");
+    return this;
   };
   //Compare and log
   if (this.doors==4 && this.colour() == "Black") {
@@ -32,4 +34,4 @@ Car.prototype.look_up = function() {
 };
 
 var my_Car= new Car(4,"red");
-my_Car.look_up(); 
+my_Car.look_up();
