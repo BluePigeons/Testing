@@ -18,7 +18,11 @@ Car.prototype.error_check= function(){
     return false;
   }
   //checking to see if the .colour is correct
+<<<<<<< HEAD
   else if (this.available_colours.indexOf(colour) >= 0){
+=======
+  else if (this.available_colours.indexOf(this.colour()) >= 0){
+>>>>>>> origin/Trying-to-return
     return false;
   } else {
     return true;
